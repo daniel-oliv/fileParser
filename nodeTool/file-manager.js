@@ -8,7 +8,7 @@ FileManager.saveFile = function(name, type, content)
     // console.log("name", name);
     // console.log("type", type);
     // console.log("content", content);
-    fs.writeFile('name.'+type, content, 'utf8', (err) => {
+    fs.writeFile('./data_out/'+name+'.'+type, content, 'utf8', (err) => {
         if (err) throw err;
         console.log('The file ' + name + ' has been saved!');
     });
